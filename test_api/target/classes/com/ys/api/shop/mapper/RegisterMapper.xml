@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ys.api.shop.mapper.RegisterDao" >
+   
+   <select id="getByMessage" resultType="com.ys.api.entity.RegisterEntity">
+    SELECT 'id','telephoneNo','password','name'，'address' FROM `member_entity`
+   </select> 
+    
+   <insert id="insertAll" parameterType="com.ys.api.entity.RegisterEntity">
+   INSERT INTO member_entity 
+   </insert  >
+</mapper>
